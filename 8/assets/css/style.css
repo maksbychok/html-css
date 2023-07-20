@@ -1,0 +1,48 @@
+main {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  color: #05ddc1;
+}
+
+.custom-a {
+  color: #05ddc1;
+}
+
+form {
+  border: 20px solid red;
+  margin: 100px;
+  padding: 10px;
+}
+
+.menu-list{
+  font-size: 20px;
+  display: flex;
+}
+
+.menu-list > p {
+  padding: 10px;
+}
+
+#main-info{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row-reverse;
+}
+
+#about-education{
+  display: flex;
+}
+
+#about-education > section{
+  flex-basis: 50vw;
+}
+
+#skills-work{
+  display: flex;
+}
+
+#skills-work > section{
+  flex-basis: 50vw;
+}

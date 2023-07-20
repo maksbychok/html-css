@@ -1,0 +1,17 @@
+main {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  color: #05ddc1;
+}
+
+.custom-a {
+  color: #05ddc1;
+}
+
+form {
+  border: 20px solid red;
+  margin: 100px;
+  padding: 10px;
+}
