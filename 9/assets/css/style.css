@@ -1,0 +1,141 @@
+body {
+  font-family: monospace;
+}
+
+header {
+  border-bottom: 3px solid #9ee4f4;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+h2 {
+  padding: 10px;
+  color: #3f4040;
+  border-bottom: 3px solid #9ee4f4;
+}
+
+.custom-a {
+  color: #00685a;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+  padding: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #42b3ff;
+  border-right: 2px solid #42b3ff;
+}
+
+.checkbox-group-item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.info {
+  padding: 30px;
+  border-left: 3px solid #42b3ff;
+}
+
+.menu-list {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list>p {
+  padding: 5px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 10px;
+  border-top: 3px solid #9ee4f4;
+}
+
+#main-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+#about-education {
+  display: flex;
+}
+
+#about-education>section {
+  flex-basis: 50vw;
+  padding: 10px;
+}
+
+#skills-work {
+  display: flex;
+}
+
+#skills-work>section {
+  flex-basis: 50vw;
+  padding: 10px;
+
+}
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.info-item {
+  padding: 10px;
+}
+
+thead{
+  font-size: large;
+  border-bottom: 3px solid #42b3ff;
+}
+
+thead>tr{
+  border-bottom: 3px solid #42b3ff;
+}
+
+td {
+  padding: 10px;
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+}
