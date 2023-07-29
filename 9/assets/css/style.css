@@ -1,6 +1,10 @@
 body {
   font-family: monospace;
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
+
 
 header {
   border-bottom: 3px solid #9ee4f4;
@@ -78,6 +82,9 @@ textarea {
 
 #about-education {
   display: flex;
+  animation-name: slideleft;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 
 #about-education>section {
@@ -87,6 +94,10 @@ textarea {
 
 #skills-work {
   display: flex;
+  animation-name: slideright;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  
 }
 
 #skills-work>section {
@@ -105,12 +116,12 @@ textarea {
   padding: 10px;
 }
 
-thead{
+thead {
   font-size: large;
   border-bottom: 3px solid #42b3ff;
 }
 
-thead>tr{
+thead>tr {
   border-bottom: 3px solid #42b3ff;
 }
 
@@ -118,24 +129,34 @@ td {
   padding: 10px;
 }
 
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
+@keyframes slideleft {
+  0% {
+    position: relative;
+    left: -100%;
   }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes slideright {
+  0% {
+    position: relative;
+    right: -100%;
   }
 
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
+  100% {
+    right: 100%;
   }
 }
